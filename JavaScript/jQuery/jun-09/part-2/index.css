@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: #121212;
+  background-color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+body > main {
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fffff0;
+}
+
+main > iframe {
+  border: 2px solid red;
+  border-radius: 16px;
+}

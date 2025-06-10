@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>June 09 | JQuery</title>
+  <link rel="stylesheet" href="mobile-menu.css">
+  <!-- <script src="../jquery-3.7.1.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="mobile-navbar">
+    <i class="fa-solid fa-bars"></i>
+    <div class="container nav-container nav-hidden" id="panel">
+      <i class="fa-solid fa-xmark"></i>
+      <h3>Menu</h3>
+
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <script>
+    $(document).ready(function () {
+      $(".fa-bars").click(function () {
+        // $(this).removeClass("fa-bars");
+        // $(this).addClass("fa-xmark");
+        // $("#panel").slideToggle("slow");
+        $("#panel").removeClass("nav-hidden");
+      });
+
+      $(".fa-xmark").click(function () {
+        $("#panel").addClass("nav-hidden");
+      });
+    });
+  </script>
+</body>
+
+</html>
