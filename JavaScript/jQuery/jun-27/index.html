@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>June 27 | JQuery DOM Manipulation</title>
+  <!-- JQuery CDN -->
+  <script src="../jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <header>DOM Manipulation using JQuery</header>
+  <main>
+    <div class="container">This is a <b>container</b></div>
+  </main>
+  <script>
+    $(document).ready(function(){
+      console.log($(".container").text());
+      console.log($(".container").html());
+    })
+  </script>
+</body>
+</html>
