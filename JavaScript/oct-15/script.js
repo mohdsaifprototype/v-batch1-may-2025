@@ -47,10 +47,19 @@ if (<condition>) {
 /* Write a program to check if the number is even or odd */
 
 let num = +prompt("Enter a number!", 0);
-if (num % 2 == 0) {
+
+// if (num % 2 === 0) {
+//   console.log(num, "is an even number!");
+// } else if (num % 2 === 1 || num % 2 === -1) {
+//   console.log(num, "is an odd number!");
+// } else {
+//   console.log("INVALID NUMBER!");
+// }
+
+if (num % 2 === 0) {
   console.log(num, "is an even number!");
-} else if (num == NaN) {
-  console.log("INVALID NUMBER!");
-} else {
+} else if (Math.abs(num % 2) === 1) {
   console.log(num, "is an odd number!");
+} else {
+  console.log("INVALID NUMBER!");
 }
