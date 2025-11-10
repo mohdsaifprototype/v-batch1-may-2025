@@ -33,12 +33,12 @@ while(<condition>) {
 
 let value = +prompt("Enter a number to print it's square. 0 to quit!", 0);
 
-while (value >= 0) {
+while (value > 0) {
   if (value == 404) {
     break;
   }
   value = +prompt("Enter a number to print it's square. 0 to quit!", 0);
-  if (value == 25) {
+  if (value == 25 || value < 0) {
     value = 0;
     continue;
   }
