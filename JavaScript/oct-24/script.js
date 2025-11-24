@@ -4,7 +4,7 @@
 // console.log("Welcome to JavaScript classes!");
 // console.log("Welcome to JavaScript classes!");
 
-/* Loops: A repeational cycle.
+/* Loops: A repetitional cycle.
     There are many ways to implement loops such as:
     1. while loop
     2. do while loop
